@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+    <meta charset="UTF-8">
+    <title>Завдання 4 - Анкета</title>
+</head>
+<body style="text-align: center;">
+    <div style="display: inline-block; text-align: left; width: 600px;">
+        <h2>Анкета користувача</h2>
+        
+        <form action="" method="post" enctype="multipart/form-data">
+            
+            <fieldset>
+                <legend>Основні дані</legend>
+                
+                <p>
+                    <label for="username">ПІБ:</label><br>
+                    <input type="text" id="username" name="username" placeholder="Іванов Іван" required tabindex="1">
+                </p>
+                
+                <p>
+                    <label for="email">Email:</label><br>
+                    <input type="email" id="email" name="email" placeholder="user@example.com" required autocomplete="off" pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,}$" tabindex="2">
+                </p>
+                
+                <p>
+                    <label for="phone">Телефон:</label><br>
+                    <input type="tel" id="phone" name="phone" placeholder="+380123456789" pattern="^\+380\d{9}$" required tabindex="3">
+                </p>
+                
+                <p>
+                    <label for="password">Пароль (6 символів, 1 велика, 1 мала, 1 цифра):</label><br>
+                    <input type="password" id="password" name="password" pattern="(?=.*\d)(?=.*[a-z])(?=.*[A-Z]).{6}" required tabindex="4">
+                </p>
+                
+                <p>
+                    <label for="birthdate">Дата народження:</label><br>
+                    <input type="date" id="birthdate" name="birthdate" tabindex="5">
+                </p>
+            </fieldset>
+
+            <fieldset>
+                <legend>Переваги та вибір</legend>
+                
+                <p>Блок Radio 1 (Рівень освіти):<br>
+                    <label><input type="radio" name="edu" value="bachelor" tabindex="6"> Бакалавр</label>
+                    <label><input type="radio" name="edu" value="master"> Магістр</label>
+                    <label><input type="radio" name="edu" value="phd"> PhD</label>
+                </p>
+
+                <p>Блок Radio 2 (Форма навчання):<br>
+                    <label><input type="radio" name="form" value="full" checked tabindex="7"> Денна (checked)</label>
+                    <label><input type="radio" name="form" value="extramural"> Заочна</label>
+                    <label><input type="radio" name="form" value="distance"> Дистанційна</label>
+                </p>
+
+                <p>Блок Checkbox (Мови програмування):<br>
+                    <label><input type="checkbox" name="lang" value="cpp" tabindex="8"> C++</label>
+                    <label><input type="checkbox" name="lang" value="java"> Java</label>
+                    <label><input type="checkbox" name="lang" value="py"> Python</label>
+                    <label><input type="checkbox" name="lang" value="js"> JavaScript</label>
+                </p>
+
+                <p>
+                    <label for="single-select">Випадний список (третій за замовчуванням):</label><br>
+                    <select id="single-select" name="single_select" tabindex="9">
+                        <option value="1">Пункт 1</option>
+                        <option value="2">Пункт 2</option>
+                        <option value="3" selected>Пункт 3 (selected)</option>
+                        <option value="4">Пункт 4</option>
+                        <option value="5">Пункт 5</option>
+                    </select>
+                </p>
+
+                <p>
+                    <label for="multi-select">Множинний вибір (Ctrl / Cmd):</label><br>
+                    <select id="multi-select" name="multi_select" multiple size="4" tabindex="10">
+                        <option value="m1">Опція 1</option>
+                        <option value="m2">Опція 2</option>
+                        <option value="m3">Опція 3</option>
+                        <option value="m4">Опція 4</option>
+                        <option value="m5">Опція 5</option>
+                        <option value="m6">Опція 6</option>
+                    </select>
+                </p>
+
+                <p>
+                    <label for="optgroup-select">Групований список (Optgroup):</label><br>
+                    <select id="optgroup-select" name="optgroup_select" tabindex="11">
+                        <optgroup label="Група 1">
+                            <option value="g1_1">Елемент 1.1</option>
+                            <option value="g1_2">Елемент 1.2</option>
+                            <option value="g1_3">Елемент 1.3</option>
+                        </optgroup>
+                        <optgroup label="Група 2">
+                            <option value="g2_1">Елемент 2.1</option>
+                            <option value="g2_2">Елемент 2.2</option>
+                            <option value="g2_3">Елемент 2.3</option>
+                        </optgroup>
+                        <optgroup label="Група 3">
+                            <option value="g3_1">Елемент 3.1</option>
+                            <option value="g3_2">Елемент 3.2</option>
+                            <option value="g3_3">Елемент 3.3</option>
+                        </optgroup>
+                        <optgroup label="Група 4">
+                            <option value="g4_1">Елемент 4.1</option>
+                            <option value="g4_2">Елемент 4.2</option>
+                            <option value="g4_3">Елемент 4.3</option>
+                        </optgroup>
+                    </select>
+                </p>
+
+                <p>
+                    <label for="city-input">Список з підказками (Datalist):</label><br>
+                    <input list="cities" id="city-input" name="city" placeholder="Оберіть місто..." tabindex="12">
+                    <datalist id="cities">
+                        <option value="Київ">
+                        <option value="Чернівці">
+                        <option value="Львів">
+                        <option value="Одеса">
+                        <option value="Харків">
+                    </datalist>
+                </p>
+
+                <p>
+                    <label for="bio">Про себе:</label><br>
+                    <textarea id="bio" name="bio" rows="4" cols="40" placeholder="Розповіжте про себе..." tabindex="13"></textarea>
+                </p>
+
+                <p>
+                    <label for="audio-upload">Завантаження декількох аудіофайлів:</label><br>
+                    <input type="file" id="audio-upload" name="audio_files[]" accept="audio/*" multiple tabindex="14">
+                </p>
+            </fieldset>
+
+            <p style="margin-top: 15px;">
+                <button type="submit" tabindex="15">Відправити</button>
+                <button type="reset" tabindex="16">Очистити</button>
+            </p>
+        </form>
+
+        <p><a href="../index.html">Повернутись на головну</a></p>
+    </div>
+</body>
+</html>
