@@ -1,0 +1,82 @@
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background-color: #b59a9a;          
+    background-image: url('../img/bg.svg');
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    background-attachment: fixed;  
+}
+
+.container {
+    box-sizing: border-box;
+    max-width: 900px;
+    min-width: 320px;
+    margin: 0 auto;
+    padding: 20px;
+    background-color: rgba(225, 199, 131, 0.85);
+}
+
+.tags div {
+    display: inline;
+    width: 200px;
+    height: 100px;
+    background-color: #ef9260;
+    margin-right: 10px;
+}
+.tags span {
+    display: block;
+    width: 150px;                    
+    background-color: #c6e8ba;
+    margin-top: 5px;
+}
+
+.repeat div {
+    display: inline-block;
+    vertical-align: top;
+    box-sizing: border-box;
+    width: 260px;
+    height: 200px;
+    margin: 0 10px 10px 0;
+    border: 1px solid #333;
+    background-image: url('../img/icon.svg');
+}
+.repeat b { background-color: white; padding: 2px 6px; }
+.r-x     { background-repeat: repeat-x; }
+.r-y     { background-repeat: repeat-y; }
+.r-space { background-repeat: space; }
+.r-round { background-repeat: round; }
+
+.size div {
+    display: inline-block;
+    vertical-align: top;
+    box-sizing: border-box;
+    width: 300px;
+    height: 200px;
+    margin: 0 10px 10px 0;
+    border: 2px solid #333;
+    background-image: url('../img/photo.svg');
+    background-position: center;
+    background-repeat: no-repeat;
+}
+.s-contain { background-size: contain; }
+.s-cover   { background-size: cover; }
+.size b { background-color: white; padding: 2px 6px; }
+
+.attach div {
+    display: inline-block;
+    vertical-align: top;
+    box-sizing: border-box;
+    width: 380px;
+    max-height: 150px;
+    overflow: auto;
+    border: 1px solid #333;
+    padding: 10px;
+    background-color: #f4f1de;
+    background-image: url('../img/icon.svg');
+    background-repeat: no-repeat;
+    background-position: right top;
+}
+.a-scroll { background-attachment: scroll; }
+.a-local  { background-attachment: local; }

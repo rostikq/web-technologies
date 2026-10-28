@@ -1,0 +1,65 @@
+<!doctype html>
+<html lang="uk">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Навігаційні панелі</title>
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined" />
+</head>
+<body>
+  <nav class="top-nav" aria-label="Горизонтальна навігація">
+    <ul class="top-menu">
+      <li><a class="current" href="#home" aria-label="Головна"><span class="material-symbols-outlined">home</span></a></li>
+      <li class="has-submenu"><a href="#courses" aria-label="Курси"><span class="material-symbols-outlined">school</span></a>
+        <ul class="submenu">
+          <li><a href="#frontend">Frontend</a></li>
+          <li><a href="#backend">Backend</a></li>
+          <li class="has-submenu"><a href="#advanced">Поглиблено ▸</a>
+            <ul class="submenu submenu-nested">
+              <li><a href="#java">Java</a></li><li><a href="#cpp">C++</a></li>
+            </ul>
+          </li>
+        </ul>
+      </li>
+      <li><a href="#calendar" aria-label="Календар"><span class="material-symbols-outlined">calendar_month</span></a></li>
+      <li><a href="#messages" aria-label="Повідомлення"><span class="material-symbols-outlined">mail</span></a></li>
+      <li class="float-right"><a href="#profile" aria-label="Профіль"><span class="material-symbols-outlined">account_circle</span></a></li>
+    </ul>
+  </nav>
+
+  <aside class="side-nav" aria-label="Вертикальна навігація">
+    <h2>Навігація</h2>
+    <ul class="side-menu">
+      <li><a class="current" href="#home"><span class="material-symbols-outlined">home</span> Головна</a></li>
+      <li class="has-submenu"><a href="#courses"><span class="material-symbols-outlined">school</span> Курси <span class="arrow">▾</span></a>
+        <ul class="submenu">
+          <li><a href="#frontend">Frontend</a></li>
+          <li><a href="#backend">Backend</a></li>
+          <li class="has-submenu"><a href="#advanced">Поглиблені курси <span class="arrow">▾</span></a>
+            <ul class="submenu submenu-nested">
+              <li><a href="#java">Java</a></li>
+              <li><a href="#cpp">C++</a></li>
+              <li><a href="#databases">Бази даних</a></li>
+            </ul>
+          </li>
+        </ul>
+      </li>
+      <li><a href="#calendar"><span class="material-symbols-outlined">calendar_month</span> Календар</a></li>
+      <li><a href="#messages"><span class="material-symbols-outlined">mail</span> Повідомлення</a></li>
+    </ul>
+  </aside>
+
+  <main class="page-content">
+    <h1>Навігація з випадними меню</h1>
+    <p>Прокрутіть сторінку, щоб перевірити fixed- та sticky-позиціонування.</p>
+    <section id="home"><h2>Головна</h2><p>Приклад вмісту сторінки.</p></section>
+    <section id="courses"><h2>Курси</h2><p>Наведіть курсор на пункт із підменю.</p></section>
+    <section id="frontend"><h2>Frontend</h2><p>Розділ демонстрації.</p></section>
+    <section id="backend"><h2>Backend</h2><p>Розділ демонстрації.</p></section>
+    <section id="advanced"><h2>Поглиблено</h2><p>Вкладене меню має третій рівень.</p></section>
+    <section id="calendar"><h2>Календар</h2><p>Додатковий вміст для прокручування.</p></section>
+    <section id="messages"><h2>Повідомлення</h2><p>Кінець демонстраційного вмісту.</p></section>
+  </main>
+</body>
+</html>

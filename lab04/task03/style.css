@@ -1,0 +1,27 @@
+
+a {
+    color: purple;
+}
+
+.main-link {
+    color: green;
+}
+
+.square-list {
+    list-style-type: square;
+}
+
+.icon-list {
+    list-style-image: url('check-icon.png'); 
+}
+
+ul ul, ul ol {
+}
+
+.square-list a {
+    text-decoration: none;
+}
+
+.inside-ordered {
+    list-style-position: inside;
+}

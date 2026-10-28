@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+    <meta charset="UTF-8">
+    <title>Лабораторна 4 - Завдання 5</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <!-- Частина 1: box-sizing -->
+    <section>
+        <h2>1. box-sizing</h2>
+        <div class="box-content">
+            content-box<br>
+            Ширина: 300px + padding + border (загальна ширина 350px)
+        </div>
+        <div class="box-border">
+            border-box<br>
+            Ширина: рівно 300px (включає padding і border)
+        </div>
+    </section>
+
+    <section>
+        <h2>2. overflow</h2>
+        <div class="overflow-block ov-visible">
+            <strong>overflow: visible;</strong><br>
+            Довгий текст, який виходить за межі заданої висоти блоку, оскільки видимий за замовчуванням і ніяк не обрізається.
+        </div>
+        <div class="overflow-block ov-hidden">
+            <strong>overflow: hidden;</strong><br>
+            Довгий текст, який виходить за межі висоти, але весь вміст, що не помістився, просто приховується від очей.
+        </div>
+        <div class="overflow-block ov-scroll">
+            <strong>overflow: scroll;</strong><br>
+            Довгий текст із примусово доданими смугами прокрутки (як вертикальною, так і горизонтальною) незалежно від потреби.
+        </div>
+        <div class="overflow-block ov-auto">
+            <strong>overflow: auto;</strong><br>
+            Довгий текст із появою смуг прокрутки автоматично — тільки тоді, коли вміст дійсно не поміщається у заданий блок.
+        </div>
+    </section>
+
+    <!-- Частина 3: display -->
+    <section>
+        <h2>3. display</h2>
+        <nav>
+            <ul>
+                <li><a href="#">Головна</a></li>
+                <li><a href="#">Про нас</a></li>
+                <li><a href="#">Послуги</a></li>
+                <li class="hidden-item"><a href="#">Схований пункт</a></li>
+                <li><a href="#">Новини</a></li>
+                <li><a href="#">Контакти</a></li>
+            </ul>
+        </nav>
+    </section>
+
+</body>
+</html>

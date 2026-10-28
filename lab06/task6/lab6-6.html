@@ -1,0 +1,44 @@
+<!doctype html>
+<html lang="uk">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Попап без JavaScript</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <main class="app">
+    <h1>CSS Popup</h1>
+    <p>Попап реалізований без JavaScript: стан контролюється checkbox і псевдокласом :checked.</p>
+
+    <input class="popup-toggle" type="checkbox" id="popup-toggle" aria-label="Відкрити або закрити попап">
+    <label class="popup-button" for="popup-toggle" tabindex="0">Відкрити / закрити попап</label>
+
+    <section class="popup" aria-label="Попап з іконками">
+      <div class="popup-header">
+        <h2>Швидкий доступ</h2>
+        <label class="popup-close" for="popup-toggle" tabindex="0" aria-label="Закрити попап">×</label>
+      </div>
+      <p class="popup-description">Оберіть потрібну іконку або додайте розширений набір.</p>
+      <div class="icon-grid">
+        <a class="icon-item" href="#home" tabindex="0"><span>⌂</span><small>Головна</small></a>
+        <a class="icon-item" href="#search" tabindex="0"><span>⌕</span><small>Пошук</small></a>
+        <a class="icon-item" href="#mail" tabindex="0"><span>✉</span><small>Пошта</small></a>
+        <a class="icon-item" href="#star" tabindex="0"><span>☆</span><small>Обране</small></a>
+        <a class="icon-item" href="#settings" tabindex="0"><span>⚙</span><small>Налаштування</small></a>
+        <a class="icon-item" href="#help" tabindex="0"><span>?</span><small>Допомога</small></a>
+      </div>
+      <input class="more-toggle" type="checkbox" id="more-toggle">
+      <label class="more-button" for="more-toggle" tabindex="0">More — додати іконки</label>
+      <div class="more-icons" tabindex="0" aria-label="Розширений список іконок">
+        <a class="icon-item" href="#calendar" tabindex="0"><span>▦</span><small>Календар</small></a>
+        <a class="icon-item" href="#music" tabindex="0"><span>♫</span><small>Музика</small></a>
+        <a class="icon-item" href="#video" tabindex="0"><span>▶</span><small>Відео</small></a>
+        <a class="icon-item" href="#chat" tabindex="0"><span>☏</span><small>Чат</small></a>
+        <a class="icon-item" href="#cloud" tabindex="0"><span>☁</span><small>Хмара</small></a>
+        <a class="icon-item" href="#download" tabindex="0"><span>↓</span><small>Завантаження</small></a>
+      </div>
+    </section>
+  </main>
+</body>
+</html>

@@ -1,0 +1,77 @@
+table {
+    width: 80%;
+    margin: 40px auto;
+    border-collapse: collapse;
+    font-family: Arial, sans-serif;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    border-radius: 6px;
+    overflow: hidden;
+}
+
+caption {
+    font-size: 24px;
+    font-weight: bold;
+    margin-bottom: 15px;
+    color: #2c3e50;
+}
+
+th, td {
+    padding: 15px;
+    text-align: center;
+    border: 1px solid #d5dbdb;
+}
+
+tr:first-child th {
+    background-color: #2c3e50;
+    color: #ffffff;
+    font-size: 16px;
+    letter-spacing: 0.5px;
+}
+
+tr:first-child th:nth-child(1) {
+    background-color:#68839d;
+}
+
+tr:first-child th:nth-child(2) {
+    background-color:#52687c;
+}
+
+tr:first-child th:nth-child(3) {
+    background-color:#3e4e5e;
+}
+
+tr:first-child th:nth-child(5) {
+    background-color:#2f3b46;
+}
+
+td:first-child {
+    text-align: left;
+    font-weight: bold;
+    color: #34495e;
+    background-color: #e5e8e8;
+}
+
+tr:nth-child(even) td {
+    background-color: #f2f4f4;
+}
+
+tr:nth-child(odd) td {
+    background-color: #eaeded;
+}
+
+tr:nth-child(even) td:first-child {
+    background-color: #d5dbdb;
+}
+
+tr:nth-child(odd) td:first-child {
+    background-color: #cacfd2;
+}
+
+tr:hover td {
+    background-color: #d4efdf;
+    transition: background-color 0.2s ease;
+}
+
+tr:hover td:first-child {
+    background-color: #a9dfbf;
+}
