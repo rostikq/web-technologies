@@ -1,32 +1,28 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="uk">
 <head>
-  <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>Тіні, прозорість і видимість</title>
-  <link rel="stylesheet" href="style.css">
+    <meta charset="UTF-8">
+    <title>Завдання 5 — погодна картка</title>
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
-  <main class="gallery">
-    <h1>Картки та ефекти CSS</h1>
-    <div class="cards">
-      <article class="card card-one">
-        <div class="card-image">01</div><h2>Позиціонування</h2>
-        <p>Елементи можуть розташовуватися шарами за допомогою position і z-index.</p>
-        <span class="extra">Додаткова інформація з’являється при наведенні.</span>
-      </article>
-      <article class="card card-two">
-        <div class="card-image">02</div><h2>Прозорість</h2>
-        <p>Властивість opacity змінює прозорість усього елемента, включно з текстом.</p>
-        <span class="extra">Наведіть курсор, щоб зробити картку повністю видимою.</span>
-      </article>
-      <article class="card card-three">
-        <div class="card-image">03</div><h2>Тінь</h2>
-        <p>box-shadow додає тінь, не змінюючи геометрію елемента в потоці.</p>
-        <span class="extra">Тінь посилюється при наведенні.</span>
-      </article>
+    <div class="scene">
+        <div class="card">
+            <div class="arrows">
+                <span class="arrow">&larr;</span><span class="arrow">&rarr;</span>
+            </div>
+            <div class="cloud"></div>
+            <div class="temp">17</div>
+            <div class="city">Чернівці</div>
+        </div>
+
+        <div class="forecast">
+            <div class="day"><span class="day-name">Mon</span>17°</div>
+            <div class="day"><span class="day-name">Tue</span>19°</div>
+            <div class="day"><span class="day-name">Wed</span>16°</div>
+            <div class="day"><span class="day-name">Thu</span>18°</div>
+            <div class="day"><span class="day-name">Fri</span>21°</div>
+        </div>
     </div>
-    <p class="hint">Наведіть курсор на картки. Клавіатурні користувачі можуть перейти до них через Tab.</p>
-  </main>
 </body>
 </html>
