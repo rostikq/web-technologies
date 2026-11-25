@@ -1,0 +1,15 @@
+:root{
+  --color-bg:#f3f4f6;
+  --color-surface:#fff;
+  --color-text:#222;
+  --color-accent:#808080;
+  --color-accent-text:#fff;
+  --color-yellow:#fdd835;
+  --color-border:#ff6b4a;
+  --gap:1rem;
+  --radius:2px;
+  --shadow:0 1px 4px rgba(0,0,0,.35);
+  --font-main:Arial,Helvetica,sans-serif;
+  --font-serif:"Times New Roman",Times,serif;
+}
+body{font-family:var(--font-main);color:var(--color-text);background:var(--color-bg);padding:var(--gap)}

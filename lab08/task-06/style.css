@@ -1,0 +1,27 @@
+.tree{
+  counter-reset:block;
+  display:grid;
+  grid-template-columns:repeat(6,1fr);
+  grid-template-rows:repeat(12,minmax(1.75rem,1fr));
+  grid-auto-flow:column;
+  gap:4px;
+  height:min(80vh,32rem);
+}
+.tree__block{
+  counter-increment:block;
+  display:flex;
+  justify-content:center;
+  align-items:flex-start;
+  grid-row:span 1;
+  background:var(--color-yellow);
+  color:var(--color-surface);
+  font-family:var(--font-serif);
+  font-size:.75rem;
+}
+.tree__block::before{content:counter(block)}
+
+.tree__block:nth-child(1){grid-row:span 12}
+.tree__block:nth-child(n+2):nth-child(-n+3){grid-row:span 6}
+.tree__block:nth-child(n+4):nth-child(-n+6){grid-row:span 4}
+.tree__block:nth-child(n+7):nth-child(-n+10){grid-row:span 3}
+.tree__block:nth-child(n+11):nth-child(-n+16){grid-row:span 2}
